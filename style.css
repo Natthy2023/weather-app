@@ -1,11 +1,11 @@
 * {
-  margin:0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: #34308F;
+  background-color: #34308f;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -17,25 +17,55 @@ img {
   max-width: 100%;
 }
 button {
-  width: 100%;
+  width: 70%;
+  margin: auto;
+  display: block;
   padding: 8px;
   border: none;
   border-radius: 10px;
-  margin-top: 50px;
-  background-color: #FDB926;
+  margin-top: 10px;
+  background-color: #fdb926;
   color: #fff;
   font-weight: 500;
+}
+h1 {
+  color: #fdb926;
+  font-weight: 500;
+}
+h2 {
+  color: #ebecee;
+  font-weight: 500;
+}
+p {
+  color: #c1c1e0;
+  margin-top: 10px;
 }
 .container {
   max-width: 600px;
   margin: 5px;
   margin-top: 23px;
-  border: 2px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 80vh;
-  padding: 20px;
   border-radius: 10px;
+  padding: 15px 0;
+}
+.container > div {
+  width: 100%;
+}
+.bg-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding: 5px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  padding-left: 50px;
 }
