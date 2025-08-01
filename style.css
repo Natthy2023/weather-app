@@ -69,3 +69,6 @@ p {
   padding: 15px;
   padding-left: 50px;
 }
+.content-wrapper button:hover {
+    background-color: #fdb926a3;
+}
