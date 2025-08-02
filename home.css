@@ -18,6 +18,24 @@ hr {
   width: 100%;
   max-width: 550px;
 }
+select {
+  border: none;
+  color: #2b286d;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+select:focus {
+  border: none;
+  outline: none;
+}
+select option {
+  background-color: #43439B;
+  color: #fff;
+  font-weight: 500;
+}
 .container {
   width: 100%;
 }
@@ -27,6 +45,13 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.img-size {
+  width: 100%;
+  display: block;
+  height: 150px;
+  object-fit: fill;
+  
 }
 .heading {
   width: 100%;
@@ -40,7 +65,8 @@ p.city {
   font-weight: 600;
 }
 p.time-banner {
-  color: #dddddd;
+  color: #646161;
+  padding:5px 0;
 }
 .fa-circle {
   color: #e0e1e5;

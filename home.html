@@ -24,7 +24,27 @@
             <i class="fa-lg fa fa-bars"></i>
           </div>
           <div class="item-2 item">
-            <p class="city">New Mexico</p>
+            <p class="city">
+              <select id="region">
+                <option value="Addis Ababa">Addis Ababa</option>
+                <option value="Menagesha">Menagesha</option>
+                <option value="Holeta">Holeta</option>
+                <option value="Addis Alem">Addis Alem</option>
+                <option value="Ambo">Ambo</option>
+                <option value="Adama">Adama</option>
+                <option value="Sebeta">Sebeta</option>
+                <option value="Assela">Assela</option>
+                <option value="Hawassa">Hawassa</option>
+                <option value="Sodo">Wolayita Sodo</option>
+                <option value="Mekele">Mekele</option>
+                <option value="Afar">Afar</option>
+                <option value="Jijiga">Jijiga</option>
+                <option value="Dire Dawa">Dire Dawa</option>
+                <option value="Welega">Welega</option>
+                <option value="Gonder">Gonder</option>
+                <option value="Guba">Guba</option>
+              </select>
+            </p>
             <p class="time-banner">Sun, November 16</p>
             <div class="spinner-wrapper">
               <i class="fa fa-circle active" aria-hidden="true"></i>
@@ -38,20 +58,22 @@
           </div>
         </div>
         <div class="bg-banner">
-          <img src="images/mostly_sunny.png" />
+          <img src="images/mostly_sunny.png" class="img-size" />
         </div>
         <div class="weather-info">
           <p id="weather-mood">Mostly Sunny</p>
           <div class="inner-wrapper">
             <div class="left-side side">
-              <p id="weather-degree">30°</p>
+              <p id="weather-degree">30°C</p>
             </div>
             <div class="right-side side">
               <div class="left">
-                <span><i class="fa fa-angle-up"></i> 32°</span>
+                <i class="fa fa-angle-up"></i>
+                <span id="maxTemp" title="Max temp">32°C</span>
               </div>
               <div class="right">
-                <span><i class="fa fa-angle-down"></i> 25°</span>
+                <i class="fa fa-angle-down"></i>
+                <span id="minTemp" title="Min temp">25°C</span>
               </div>
             </div>
           </div>
@@ -62,34 +84,38 @@
           <h2>Today</h2>
           <div class="grid">
             <div class="box box-1">
-              <p>14:00</p>
-              <p>32°</p>
-              <div><img src="images/mostly_sunny.png" /></div>
+              <p class="time">14:00</p>
+              <p class="degree">32°</p>
+              <div class="condition"><img src="images/mostly_sunny.png" /></div>
             </div>
             <div class="box box-2">
-              <p>14:00</p>
-              <p>32°</p>
-              <div><img src="images/mostly_sunny.png" /></div>
+              <p class="time">14:00</p>
+              <p class="degree">32°</p>
+              <div class="condition"><img src="images/mostly_sunny.png" /></div>
             </div>
             <div class="box box-3">
-              <p>14:00</p>
-              <p>32°</p>
-              <div><img src="images/cloudy_sunny 1.png" /></div>
+              <p class="time">14:00</p>
+              <p class="degree">32°</p>
+              <div class="condition">
+                <img src="images/cloudy_sunny 1.png" />
+              </div>
             </div>
             <div class="box box-4">
-              <p>14:00</p>
-              <p>32°</p>
-              <div><img src="images/cloudy_sunny 1.png" /></div>
+              <p class="time">14:00</p>
+              <p class="degree">32°</p>
+              <div class="condition">
+                <img src="images/cloudy_sunny 1.png" />
+              </div>
             </div>
             <div class="box box-5">
-              <p>14:00</p>
-              <p>32°</p>
-              <div><img src="images/cloudy.png" /></div>
+              <p class="time">14:00</p>
+              <p class="degree">32°</p>
+              <div class="condition"><img src="images/cloudy.png" /></div>
             </div>
             <div class="box box-6">
-              <p>14:00</p>
-              <p>32°</p>
-              <div><img src="images/cloudy_moon.png" /></div>
+              <p class="time">14:00</p>
+              <p class="degree">32°</p>
+              <div class="condition"><img src="images/cloudy_moon.png" /></div>
             </div>
           </div>
         </div>
@@ -104,68 +130,68 @@
               <p class="right-box">
                 <span>32°</span>
                 <span>24°</span>
-                <img src="images/mostly_sunny.png">
+                <img src="images/mostly_sunny.png" />
               </p>
             </div>
             <div class="row row-2">
               <p class="left-box">
-                  <span>Tue, Nov 18</span>
+                <span>Tue, Nov 18</span>
               </p>
               <p class="right-box">
                 <span>30°</span>
                 <span>23°</span>
-                <img src="images/clouds.png">
+                <img src="images/clouds.png" />
               </p>
             </div>
             <div class="row row-3">
               <p class="left-box">
-                  <span>Wed, Nov 19</span>
+                <span>Wed, Nov 19</span>
               </p>
               <p class="right-box">
                 <span>30°</span>
                 <span>24°</span>
-                <img src="images/rainy_lightning.png">
+                <img src="images/rainy_lightning.png" />
               </p>
             </div>
             <div class="row row-4">
               <p class="left-box">
-                  <span>Thu, Nov 20</span>
+                <span>Thu, Nov 20</span>
               </p>
               <p class="right-box">
                 <span>28°</span>
                 <span>22°</span>
-                <img src="images/rainy.png">
+                <img src="images/rainy.png" />
               </p>
             </div>
             <div class="row row-5">
               <p class="left-box">
-                  <span>Fri, Nov 21</span>
+                <span>Fri, Nov 21</span>
               </p>
               <p class="right-box">
                 <span>28°</span>
                 <span>22°</span>
-                <img src="images/rainy.png">
+                <img src="images/rainy.png" />
               </p>
             </div>
             <div class="row row-6">
               <p class="left-box">
-                  <span>Sat, Nov 22</span>
+                <span>Sat, Nov 22</span>
               </p>
               <p class="right-box">
                 <span>31°</span>
                 <span>23°</span>
-                <img src="images/mostly_sunny.png">
+                <img src="images/mostly_sunny.png" />
               </p>
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <div class="temp-footer">
           <h2>Detail</h2>
           <div class="temp-info-grid">
             <div class="b-1 b">
-            <p>Real Feel: <span>32°</span></p>
-            <p>Humidity: <span>70°</span></p>
+              <p>Real Feel: <span>32°</span></p>
+              <p>Humidity: <span>70°</span></p>
             </div>
             <div class="b-2 b">
               <p>Visibility: <span>5km</span></p>
