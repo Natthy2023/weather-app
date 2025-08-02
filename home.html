@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper-container">
+        <div class="heading">
+          <div class="item-1 item">
+            <i class="fa-lg fa fa-bars"></i>
+          </div>
+          <div class="item-2 item">
+            <p class="city">New Mexico</p>
+            <p class="time-banner">Sun, November 16</p>
+            <div class="spinner-wrapper">
+              <i class="fa fa-circle active" aria-hidden="true"></i>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              <i class="fa fa-circle" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="item-3 item">
+            <i class="fa-lg fa fa-plus" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="bg-banner">
+          <img src="images/mostly_sunny.png" />
+        </div>
+        <div class="weather-info">
+          <p id="weather-mood">Mostly Sunny</p>
+          <div class="inner-wrapper">
+            <div class="left-side side">
+              <p id="weather-degree">30°</p>
+            </div>
+            <div class="right-side side">
+              <div class="left">
+                <span><i class="fa fa-angle-up"></i> 32°</span>
+              </div>
+              <div class="right">
+                <span><i class="fa fa-angle-down"></i> 25°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lower-container">
+        <div class="temp-header">
+          <h2>Today</h2>
+          <div class="grid">
+            <div class="box box-1">
+              <p>14:00</p>
+              <p>32°</p>
+              <div><img src="images/mostly_sunny.png" /></div>
+            </div>
+            <div class="box box-2">
+              <p>14:00</p>
+              <p>32°</p>
+              <div><img src="images/mostly_sunny.png" /></div>
+            </div>
+            <div class="box box-3">
+              <p>14:00</p>
+              <p>32°</p>
+              <div><img src="images/cloudy_sunny 1.png" /></div>
+            </div>
+            <div class="box box-4">
+              <p>14:00</p>
+              <p>32°</p>
+              <div><img src="images/cloudy_sunny 1.png" /></div>
+            </div>
+            <div class="box box-5">
+              <p>14:00</p>
+              <p>32°</p>
+              <div><img src="images/cloudy.png" /></div>
+            </div>
+            <div class="box box-6">
+              <p>14:00</p>
+              <p>32°</p>
+              <div><img src="images/cloudy_moon.png" /></div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="temp-content">
+          <h2>Everyday</h2>
+          <div class="report-banner">
+            <div class="row row-1">
+              <p class="left-box">
+                <span>Mon, Nov 17</span>
+              </p>
+              <p class="right-box">
+                <span>32°</span>
+                <span>24°</span>
+                <img src="images/mostly_sunny.png">
+              </p>
+            </div>
+            <div class="row row-2">
+              <p class="left-box">
+                  <span>Tue, Nov 18</span>
+              </p>
+              <p class="right-box">
+                <span>30°</span>
+                <span>23°</span>
+                <img src="images/clouds.png">
+              </p>
+            </div>
+            <div class="row row-3">
+              <p class="left-box">
+                  <span>Wed, Nov 19</span>
+              </p>
+              <p class="right-box">
+                <span>30°</span>
+                <span>24°</span>
+                <img src="images/rainy_lightning.png">
+              </p>
+            </div>
+            <div class="row row-4">
+              <p class="left-box">
+                  <span>Thu, Nov 20</span>
+              </p>
+              <p class="right-box">
+                <span>28°</span>
+                <span>22°</span>
+                <img src="images/rainy.png">
+              </p>
+            </div>
+            <div class="row row-5">
+              <p class="left-box">
+                  <span>Fri, Nov 21</span>
+              </p>
+              <p class="right-box">
+                <span>28°</span>
+                <span>22°</span>
+                <img src="images/rainy.png">
+              </p>
+            </div>
+            <div class="row row-6">
+              <p class="left-box">
+                  <span>Sat, Nov 22</span>
+              </p>
+              <p class="right-box">
+                <span>31°</span>
+                <span>23°</span>
+                <img src="images/mostly_sunny.png">
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="temp-footer">
+          <h2>Detail</h2>
+          <div class="temp-info-grid">
+            <div class="b-1 b">
+            <p>Real Feel: <span>32°</span></p>
+            <p>Humidity: <span>70°</span></p>
+            </div>
+            <div class="b-2 b">
+              <p>Visibility: <span>5km</span></p>
+              <p>UV Index: <span>0</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="home.js"></script>
+  </body>
+</html>

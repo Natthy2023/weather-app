@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #f8f7fc;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+}
+hr {
+  width: 100%;
+  max-width: 550px;
+}
+.container {
+  width: 100%;
+}
+.upper-container {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+p.city {
+  font-size: 1.2em;
+  color: #2b286d;
+  font-weight: 600;
+}
+p.time-banner {
+  color: #dddddd;
+}
+.fa-circle {
+  color: #e0e1e5;
+  font-size: 0.6em;
+}
+.item.item-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.active {
+  color: #29266c;
+}
+#weather-mood {
+  color: #9f99c2;
+  font-weight: 500;
+}
+#weather-degree {
+  color: #29266c;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.weather-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+}
+.weather-info .inner-wrapper,
+.inner-wrapper .right-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.inner-wrapper .right-side {
+  align-self: flex-end;
+  color: #8c8b8b;
+}
+.right-side i {
+  color: #dddddd;
+}
+.lower-container {
+  background-color: #2b286d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 50px 50px 0 0;
+}
+
+.lower-container img {
+  width: 25px;
+}
+.temp-header,
+.temp-content,
+.temp-footer {
+  padding: 15px 0;
+}
+.temp-header .grid {
+  display: grid;
+  max-width: 550px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 15px;
+  padding-left: 0;
+}
+.grid .box {
+  background-color: #383095;
+  border-radius: 10px;
+  padding: 15px;
+  height: 100px;
+}
+
+.report-banner .row {
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.temp-info-grid {
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+.temp-info-grid .b p {
+  padding: 10px;
+  padding-left: 0;
+}
+.temp-content .row .right-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+@media (max-width: 400px) {
+  .temp-header .grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+  .temp-content .row .right-box {
+    gap: 15px;
+  }
+}
