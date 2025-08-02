@@ -7,6 +7,14 @@ const maxTemp = document.querySelector('#maxTemp');
 const minTemp = document.querySelector('#minTemp');
 const selectedRegion = document.querySelector('#region');
 const timeList = document.querySelectorAll('.box .time');
+const degreeList = document.querySelectorAll('.box .degree');
+const conditionList = document.querySelectorAll('.box .condition img');
+const row = document.querySelectorAll('.row .left-box span');
+const imgList = document.querySelectorAll('.row .right-box img');
+const realFeel = document.querySelector('.real span');
+const humid = document.querySelector('.humidity span');
+const visibility = document.querySelector('.visibility span');
+const uvIndex = document.querySelector('.uv-index span');
 
 const daysOfWeek = {
   0: 'Sunday',
@@ -39,7 +47,12 @@ selectedRegion.addEventListener('click', function (event) {
   )
     .then((response) => response.json())
     .then((data) => {
-      const hours = data.forecast.forecastday.hour;
+       const current = data.current;
+    humid.textContent = `${current.humidity}%`;
+    realFeel.textContent = `${current.feelslike_c}°C`;
+    visibility.textContent = `${current.vis_km} km`;
+    uvIndex.textContent = current.uv;
+      
       const currentTemp = data.current.temp_c;
       const condition = data.current.condition;
       const dayTemp = data.forecast.forecastday[0].day;
@@ -51,16 +64,25 @@ selectedRegion.addEventListener('click', function (event) {
         .setAttribute('title', condition.text);
       weatherMood.textContent = condition.text;
       weatherDegree.textContent = `${currentTemp}°C`;
-      
-        const time = new Date(hours[index].time_epoch);
+
+      for (let i = 0; i < timeList.length; i++) {
+        const hours = data.forecast.forecastday[3].hour;
+        const currTemp = hours[i].temp_c;
+        const icons = hours[i].condition.icon;
+        const time = new Date(hours[i].time);
         let hr = time.getHours();
         let min = time.getMinutes();
-        console.log(time);
-        box[index].textContent = `${hr}:${min}`;
-      
+        console.log(currTemp);
+        timeList[i].textContent = `${String(hr).padStart(2, '0')}:${String(
+          min
+        ).padStart(2, '0')}`;
+        degreeList[i].textContent = `${currTemp}°C`;
+        conditionList[i].setAttribute('src', icons);
+        imgList[i].setAttribute('src', icons);
+      }
     })
     .catch((error) => {
-      console.log('Error: ', error);
+      console.log('Weather fetch error: ', error);
       return false;
     });
   console.log(token);
@@ -69,6 +91,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const date = new Date();
   const today = date.getDate();
   const day = date.getDay();
-  const month = months[date.getMonth()];
-  timeBanner.textContent = `${daysOfWeek[day]}, ${month} ${today}`;
+  const month = date.getMonth();
+  timeBanner.textContent = `${daysOfWeek[day]}, ${months[month]} ${today}`;
+  for(let i=0 ; i<row.length; i++){
+    row[i].textContent = `${daysOfWeek[i].slice(0,3)}, ${months[month]} ${today+i+1}`;
+  }
 });
