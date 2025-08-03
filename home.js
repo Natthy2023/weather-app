@@ -82,10 +82,12 @@ selectedRegion.addEventListener('click', function (event) {
       }
     })
     .catch((error) => {
-      console.log('Weather fetch error: ', error);
+      document.querySelector('.bg-banner').classList.add('animated-error-popup');
+      document.querySelector('.bg-banner').textContent =('<p >Weather fetch error: </p>', error);
+      
       return false;
     });
-  console.log(token);
+ 
 });
 document.addEventListener('DOMContentLoaded', function () {
   const date = new Date();
