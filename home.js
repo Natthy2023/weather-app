@@ -41,7 +41,10 @@ const months = {
 };
 document.querySelector('.fa-plus').addEventListener('click',()=>{
   window.location.href = './Search.html';
-})
+});
+document.querySelector('.fa-bars').addEventListener('click',()=>{
+  window.location.href = './index.html';
+});
 selectedRegion.addEventListener('click', function (event) {
   let token = event.target.value;
   fetch(
