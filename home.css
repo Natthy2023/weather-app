@@ -170,7 +170,26 @@ p.time-banner {
   justify-content: space-between;
   gap: 50px;
 }
+.animated-error-popup {
+  background-color: #d32f2f;
+  color: #f8f7fc;
+  padding: 15px 20px;
+  border-radius: 8px;
+  position: fixed; 
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
 @media (max-width: 400px) {
   .temp-header .grid {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
