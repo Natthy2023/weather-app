@@ -39,7 +39,9 @@ const months = {
   10: 'November',
   11: 'December'
 };
-
+document.querySelector('.fa-plus').addEventListener('click',()=>{
+  window.location.href = './Search.html';
+})
 selectedRegion.addEventListener('click', function (event) {
   let token = event.target.value;
   fetch(
