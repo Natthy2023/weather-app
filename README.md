@@ -2,22 +2,23 @@
 
 A simple and interactive weather forecast application that allows users to search for weather data by city, displays the current conditions, and keeps a searchable history using `localStorage`.
 
+ <a href="https://nadx-weather-app.netlify.app/"><button style="padding: 10px;font-size:1.5em; border-radius: 5px;">Live Demo</button></a>
 ## 🔧 Features
 
-- 🔍 **City-Based Weather Search**  
-  Enter a city name and instantly fetch weather data using the [WeatherAPI](https://www.weatherapi.com/).
+### 🔍 City-Based Weather Search
+ >  Enter a city name and instantly fetch weather data using the [WeatherAPI](https://www.weatherapi.com/).
 
-- 📦 **LocalStorage Search History**  
-  Your search history is saved locally and persists even after reloading the page.
+### 📦 LocalStorage Search History
+> Your search history is saved locally and persists even after reloading the page.
 
-- 🔁 **Search Result Overwrite**  
-  Each new search replaces the previous weather display for clarity.
+### 🔁 Search Result Overwrite 
+> Each new search replaces the previous weather display for clarity.
 
-- 🧹 **Clear History Functionality**  
-  One-click button to clear your saved search history and UI.
+### 🧹 Clear History Functionality
+> One-click button to clear your saved search history and UI.
 
-- 🌐 **Location-Specific Queries**  
-  All weather queries are scoped to cities within Ethiopia (you can modify this easily).
+### 🌐 Location-Specific Queries 
+> All weather queries are scoped to cities within Ethiopia (you can modify this easily).
 
 ## 🖼️ Demo Preview
    ### Get started page view:
